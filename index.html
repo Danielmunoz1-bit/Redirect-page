@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .redirect-btn {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .redirect-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function redirectToPortal() {
+            window.location.href = "https://sites.google.com/cic-nj.org/ucydp/login/portal";
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Successful</h2>
+    <p>Click the button below if you are not redirected automatically.</p>
+    <a href="https://sites.google.com/cic-nj.org/ucydp/login/portal" class="redirect-btn">Go to Portal</a>
+
+    <script>
+        // Automatic redirect after 3 seconds
+        setTimeout(redirectToPortal, 3000);
+    </script>
+</body>
+</html>
